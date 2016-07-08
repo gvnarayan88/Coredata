@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
-@property (nonatomic,strong) NSString *firstname;
-@property (nonatomic,strong) NSString *lastname;
+@property (nonatomic,strong) NSString *firstname;//stores person's first name
+@property (nonatomic,strong) NSString *lastname;//stores person's second name
 @end
