@@ -48,8 +48,8 @@
     
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
     NSManagedObject *newPerson = [[NSManagedObject alloc]initWithEntity:entityDesc insertIntoManagedObjectContext:context];
-    [newPerson setValue:self.firstnameTextField.text forKeyPath:@"Enter First name"];
-    [newPerson setValue:self.lastnameTextfield.text forKeyPath:@"Enter last name"];
+    [newPerson setValue:self.firstnameTextField.text forKeyPath:@"firstname"];
+    [newPerson setValue:self.lastnameTextfield.text forKeyPath:@"lastname"];
     
     NSError *error;
     [context save:&error];
